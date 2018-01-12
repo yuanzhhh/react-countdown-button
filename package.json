@@ -1,6 +1,6 @@
 {
   "name": "react-countdown-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Countdown button component for React",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "keywords": [
     "react",
-    "countdown", 
+    "countdown",
     "countdown-button"
   ],
   "author": "Evan Yuan <evan.yuanzh@gmail.com>",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/yuanzhhh/react-countdown-button/issues"
   },
-  "homepage": "https://github.com/yuanzhhh/react-countdown-button"
+  "homepage": "https://github.com/yuanzhhh/react-countdown-button",
+  "dependencies": {
+    "react": "16.2.0"
+  }
 }
