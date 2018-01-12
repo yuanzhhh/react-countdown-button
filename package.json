@@ -1,6 +1,6 @@
 {
   "name": "react-countdown-button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Countdown button component for React",
   "main": "/lib/index.js",
   "scripts": {
