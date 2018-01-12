@@ -2,8 +2,9 @@
   "name": "react-countdown-button",
   "version": "0.0.2",
   "description": "Countdown button component for React",
-  "main": "index.js",
+  "main": "/lib/index.js",
   "scripts": {
+    "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,5 +24,11 @@
   "homepage": "https://github.com/yuanzhhh/react-countdown-button",
   "dependencies": {
     "react": "16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
   }
 }

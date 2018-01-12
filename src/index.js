@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import BaseComponent from './src/BaseComponent';
+import BaseComponent from './BaseComponent';
 
 export default class CountdownButton extends BaseComponent {
     constructor(props) {
