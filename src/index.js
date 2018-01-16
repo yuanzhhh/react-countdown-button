@@ -44,10 +44,8 @@ export default class CountdownButton extends BaseComponent {
 
             this.stateCallback('countdownEnd');
         } else if (countdownState) {
-            const _this =  this;
-
             setTimeout(() => {
-                _this.setState({
+                this.setState({
                     countdownNow: countdownNow - 1,
                 });
             }, 1000);
