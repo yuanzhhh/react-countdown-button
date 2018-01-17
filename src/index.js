@@ -67,6 +67,12 @@ export default class CountdownButton extends BaseComponent {
     }
 
     countdown() {
+        const {disabled} = this.props;
+
+        if (disabled) {
+            return;
+        }
+
         this.setState({
             countdownState: true,
             isDisabled: true,
@@ -86,6 +92,7 @@ export default class CountdownButton extends BaseComponent {
 
         const {
             className,
+            disabled,
         } = this.props;
 
         return (
@@ -93,7 +100,7 @@ export default class CountdownButton extends BaseComponent {
                 className = {className}
                 disabled = {isDisabled}
                 onClick = {this.countdown}
-                style={{color: countdownState ? disabledColor : false}}
+                style={{color: disabled ? disabledColor : countdownState ? disabledColor : false}}
             >
                 {countdownState ? `${countdownNow}s` : showText}
             </button>
